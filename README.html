@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myelin-meta-analysis &#8212; The quest for measuring myelin with MRI - An interactive meta-analysis</title>
+    <title>The quest for measuring myelin with MRI - An interactive meta-analysis &#8212; The quest for measuring myelin with MRI - An interactive meta-analysis</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -247,6 +247,25 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-full-preprint-is-available-on-biorxiv">
+   📎The full preprint is available on bioRxiv.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#usage-instructions">
+   🖥 Usage instructions
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -254,8 +273,75 @@
         
               <div>
                 
-  <div class="section" id="myelin-meta-analysis">
-<h1>myelin-meta-analysis<a class="headerlink" href="#myelin-meta-analysis" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="the-quest-for-measuring-myelin-with-mri-an-interactive-meta-analysis">
+<h1>The quest for measuring myelin with MRI - An interactive meta-analysis<a class="headerlink" href="#the-quest-for-measuring-myelin-with-mri-an-interactive-meta-analysis" title="Permalink to this headline">¶</a></h1>
+<p><em>Matteo Mancini, Agah Karakuzu, Thomas Nichols, Julien Cohen-Adad, Mara Cercignani, Nikola Stikov</em></p>
+<br>
+<p>This repository generates the interactive figures and the meta-analysis results for our study “The quest for measuring myelin with MRI – An interactive meta-analysis of quantitative comparisons with histology”.</p>
+<div class="section" id="the-full-preprint-is-available-on-biorxiv">
+<h2>📎<a class="reference external" href="https://www.biorxiv.org/content/10.1101/2020.07.13.200972v2">The full preprint is available on bioRxiv.</a><a class="headerlink" href="#the-full-preprint-is-available-on-biorxiv" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="usage-instructions">
+<h2>🖥 Usage instructions<a class="headerlink" href="#usage-instructions" title="Permalink to this headline">¶</a></h2>
+<p>This Jupyter Book is published by NeuroLibre at <a href="https://neurolibre.github.io/myelin-meta-analysis">https://neurolibre.github.io/myelin-meta-analysis</a>, where all the interactive content is made readily available!</p>
+<p>However, several options are available if you would like to reproduce the outputs
+by re-executing the code.</p>
+<details><summary> <b>💻 Execute locally</b> </font> </summary><br>
+<p>The required packages can be installed using pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><strong>Note:</strong></p>
+<p>R and the metafor package are both needed to fit the mixed-effect model in <code class="docutils literal notranslate"><span class="pre">meta-analysis.ipynb</span></code> through the package rpy2. Alternatively, you can use the conda environment described in <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>.</p>
+<hr class="docutils" />
+</details>
+<details><summary> <b>🐳 Use with Docker</b> </font> </summary><br>
+<p>If you have Docker installed on your computer and running, you can run the code
+in the same environment described in this repository using <code class="docutils literal notranslate"><span class="pre">repo2docker</span></code>.</p>
+<ol class="simple">
+<li><p>Simply install <code class="docutils literal notranslate"><span class="pre">repo2docker</span></code> from pyPI:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">repo2docker</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Run the following command in your terminal:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">repo2docker</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">neurolibre</span><span class="o">/</span><span class="n">myelin</span><span class="o">-</span><span class="n">meta</span><span class="o">-</span><span class="n">analysis</span>
+</pre></div>
+</div>
+<p>After building (it might take a while!), it should output in your terminal
+something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://0.0.0.0:36511/?token=f94f8fabb92e22f5bfab116c382b4707fc2cade56ad1ace0
+</pre></div>
+</div>
+<p>This should start a Jupyter session on your browser and make all the resources
+you see when you <a class="reference external" href="https://mybinder.org/v2/gh/neurolibre/myelin-meta-analysis/master">launch a Binder</a> for this repository.</p>
+<p>To re-use your container built by repo2docker, do the following:</p>
+<ol class="simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">images</span></code> command and copy the <code class="docutils literal notranslate"><span class="pre">IMAGE</span> <span class="pre">ID</span></code> to your clipboard</p></li>
+<li><p>Run the following command to start the container:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>docker run -it --rm -p 8888:8888 `PASTE IMAGE ID HERE` jupyter notebook --ip 0.0.0.0
+</pre></div>
+</div>
+</details>
+<details><summary> <b>☁️ Zero installation</b> </font> </summary><br>
+<p>You can use <code> Interact Inline </code> or <code>Launch in Binder</code> buttons
+at the top of each page of the <a href="https://neurolibre.github.io/myelin-meta-analysis">Jupyter Book</a>.</p>
+<p>Alternatively, you can start a Binder session by clicking the badge below:</p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/neurolibre/myelin-meta-analysis/master"><img alt="Binder" src="https://github.com/zelenkastiot/binder_badges/blob/master/badges/myelin--meta--analysis-binder.svg" /></a></p>
+</details>
+<br>
+<hr>
+<p align="center">
+<img src="https://avatars3.githubusercontent.com/u/63861117?s=200&v=4" style="width:40px;"></img> <br>
+This repository is created by <a href="https://github.com/Notebook-Factory">Notebok-Factory</a>. 
+</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
