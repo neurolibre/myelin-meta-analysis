@@ -7,7 +7,7 @@ _Matteo Mancini, Agah Karakuzu, Thomas Nichols, Julien Cohen-Adad, Mara Cercigna
 
 ````{margin}
 <center><h1>📝</h1></center>
-<b><a href="https://www.biorxiv.org/content/10.1101/2020.07.13.200972v3" target="_blank">The full preprint is available on bioRxiv.</a></b>
+<b><a href="https://www.biorxiv.org/content/10.1101/2020.07.13.200972v4" target="_blank">The full preprint is available on bioRxiv.</a></b>
 ````
 
 This Jupyter Book explores an important aspect of quantitative magnetic resonance imaging (qMRI): **validation**. Focusing specifically on **myelin measures**, we show the results of our **meta-analysis comparing quantitative MRI with histology**.
@@ -38,5 +38,5 @@ You can click on each box to expand the related category, and for each study you
 
 ```{admonition} About the content of this Jupyter Book
 :class: warning
-In the next pages you will find brief descriptions of what has been done, but the figures (realized with [plotly](https://plotly.com)) are the main content. You will not find sections discussing or interpreting these results: for that, please check the [preprint](https://www.biorxiv.org/content/10.1101/2020.07.13.200972v3).
+In the next pages you will find brief descriptions of what has been done, but the figures (realized with [plotly](https://plotly.com)) are the main content. You will not find sections discussing or interpreting these results: for that, please check the [preprint](https://www.biorxiv.org/content/10.1101/2020.07.13.200972v4).
 ```
